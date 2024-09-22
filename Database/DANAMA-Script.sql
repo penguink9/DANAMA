@@ -96,10 +96,10 @@ CREATE TABLE Showtime (
     baseprice DECIMAL(10, 2),
     movieId INT,
     roomId INT,
+	seatAvailable INT,
     FOREIGN KEY (movieId) REFERENCES Movie(movieId),
     FOREIGN KEY (roomId) REFERENCES Room(roomId)
 )
-
 -- Create SeatAvailability Table
 CREATE TABLE SeatAvailability (
     seatId INT,
